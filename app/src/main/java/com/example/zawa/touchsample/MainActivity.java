@@ -8,6 +8,7 @@ import android.view.View;
 import com.example.zawa.touchsample.touch1.Touch1Activity;
 import com.example.zawa.touchsample.touch2.Touch2Activity;
 import com.example.zawa.touchsample.touch3.Touch3Activity;
+import com.example.zawa.touchsample.touch4.Touch4Activity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void touch3(View v){
         Intent intent = new Intent(getApplicationContext(), Touch3Activity.class);
+        startActivity(intent);
+    }
+    public void touch4(View v){
+        Intent intent = new Intent(getApplicationContext(), Touch4Activity.class);
         startActivity(intent);
     }
 }
